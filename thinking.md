@@ -33,24 +33,35 @@ The platform should do much more than just send a WhatsApp reply.
 First, the AI should classify this as:
 
 -->Critical maintenance issue
+
 -->High guest frustration
+
 ->Possible compensation/refund request
 
 Then the system should automatically:
 
 -->Create a high-priority incident ticket
+
 -->Notify the on-call maintenance person by WhatsApp + SMS + phone call
+
 -->Notify the operations manager in Slack/email
+
 ->Attach the guest profile, reservation details, villa number, and previous complaint history
+
 -->Start a 30-minute escalation timer
 
 Everything should be logged:
 
 -->Original guest message
+
 -->AI-generated response
+
 -->Confidence score
+
 -->Escalation timestamps
+
 -->Human actions taken
+
 Final resolution
 
 If no human responds within 30 minutes:
