@@ -15,6 +15,7 @@ at Villa B1. What should the system do with this pattern? What would you
 build to prevent this complaint from happening a fourth time?
 
 ----------------Answer----------------
+
 Answer A — The Immediate Response
 
 Hi, I’m really sorry you’re dealing with this at 3am, especially with guests arriving in the morning. I’ve marked this as urgent and alerted the on-call operations team immediately.
