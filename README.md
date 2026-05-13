@@ -73,6 +73,8 @@ nistula-technical-assessment/
 │   ├── claude_services.py/
 │   ├── config.py/
 │   ├── classifier.py/
+```
+
 
 # 🚀 Setup Instructions
 
@@ -81,10 +83,8 @@ nistula-technical-assessment/
 ```bash
 git clone https://github.com/yourusername/nistula-technical-assessment.git
 cd nistula-technical-assessment
+
 ```
-
----
-
 ## 2. Create Virtual Environment
 
 ### Windows
