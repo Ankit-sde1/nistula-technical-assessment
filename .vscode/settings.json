@@ -1,0 +1,22 @@
+{
+    "python-envs.pythonProjects": [
+        {
+            "path": "app/app",
+            "envManager": "ms-python.python:venv",
+            "packageManager": "ms-python.python:pip"
+        }
+    ],
+    "sqltools.connections": [
+        {
+            "ssh": "Disabled",
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "askForPassword": true,
+            "driver": "PostgreSQL",
+            "name": "Nistula DB",
+            "database": "nistula_db",
+            "username": "postgres"
+        }
+    ]
+}
