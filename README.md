@@ -141,6 +141,30 @@ http://127.0.0.1:8000/docs
 ---
 
 # 📊 Confidence Scoring Logic
+The confidence score represents how reliable and safe the system believes the AI-generated response is before sending it to a guest.
+
+The scoring logic is designed around operational risk and message clarity.
+
+We start with a base confidence score(0.75) once the message is successfully received, normalized, and classified. From there, the score increases for low-risk and structured queries such as availability checks, pricing requests, or check-in questions because these rely on predefined property information and are easier to answer accurately.
+
+The system also checks the quality of the drafted response. If the AI generates a detailed and context-aware reply, the confidence score increases further.
+
+For sensitive cases like complaints, the confidence score is intentionally reduced because these situations may require human judgment, empathy, or operational intervention. Such messages are automatically flagged for escalation or manual review instead of being auto-sent.
+
+This approach ensures:
+
+* Faster automation for routine guest queries
+* Human oversight for high-risk conversations
+* Safer and more reliable AI-assisted communication
+
+Action mapping:
+
+* High confidence → auto_send
+* Medium confidence → agent_review
+* Low confidence or complaints → escalate
+
+This creates a balanced workflow where AI improves response speed while maintaining quality control and operational safety.
+
 
 The system assigns a confidence score based on:
 - Keyword matching
